@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 import car1 from "../assests/images/tesla-model-s.jpg"
 import car2 from "../assests/images/bmw-m3.jpg"
 import car3 from "../assests/images/audi-a6.jpg"
@@ -94,7 +93,7 @@ export default function AppFeaturedCars() {
                         return (
                             <Col sm={3} key={cars.id}>
                                 <div className="feaCarsImg">
-                                    <img src={cars.image} />
+                                    <img src={cars.image} alt="FeaturedCarImage" />
                                 </div>
                                 <br></br>
                                 <div className="content" id='feaCon'>
